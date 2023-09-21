@@ -3,8 +3,12 @@ from twilio.rest import Client
 import os
 
 
-t_sid = os.environ.get("AUTH_SID")
-t_token = os.environ.get("AUTH_TOKEN")
+t_sid = os.environ.get("AUTH_SID")          # add your own Auth SID from twilio
+t_token = os.environ.get("AUTH_TOKEN")      # add your own Auth token from twilio
+
+print(t_token, t_sid)
+
+"""
 
 api_ep = "https://api.openweathermap.org/data/3.0/onecall"
 parameters = {"appid" : os.environ.get("OWM_API_KEY"),
